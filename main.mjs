@@ -25,7 +25,14 @@ import * as helper from './helper.mjs';
 
 
 
+
+
 window.addEventListener('load', () => {
-  console.log('Creating stars...');
   helper.createStars();
+  
+  setTimeout(() => {
+    helper.askForName().then(name => {
+      // You can use the name here if needed
+    });
+  }, 3500);
 });

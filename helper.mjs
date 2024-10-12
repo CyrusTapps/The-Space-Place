@@ -36,3 +36,28 @@ export function createStars() {
   }
 }
 
+export function customPrompt(message) {
+  return new Promise((resolve) => {
+    const promptElement = document.getElementById('custom-prompt');
+    const messageElement = document.getElementById('prompt-message');
+    const inputElement = document.getElementById('prompt-input');
+    const submitButton = document.getElementById('prompt-submit');
+
+    messageElement.textContent = message;
+    promptElement.style.display = 'block';
+
+    submitButton.onclick = () => {
+      const value = inputElement.value;
+      promptElement.style.display = 'none';
+      resolve(value);
+    };
+  });
+}
+
+export async function askForName() {
+  const firstName = await customPrompt("Welcome to 'The Space Place'! May I know your first name?");
+  console.log(`Hello, ${firstName}!`);
+  return firstName;
+}
+
+// ... any other helper functions ...

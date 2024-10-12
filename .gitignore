@@ -1,5 +1,8 @@
 # file in lieu of dotenv
 assets/rest/rest.mjs
+# node modules
 node_modules
 # LIveServer settings for dev for CORS policy and MIME
 .vscode
+# dev notes and sidebar code
+notes.txt
