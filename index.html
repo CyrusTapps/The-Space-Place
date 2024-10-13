@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Space Place</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <script type="module" src="./main.mjs" defer></script>
   </head>
@@ -12,8 +24,73 @@
       <header>
         <h1>The Space Place</h1>
       </header>
-      <section></section>
-      <footer></footer>
+      <section>
+        <main id="mainDisplay">
+          <span id="main-content" class="main-content" hidden>
+            <h3 id="main-content-header" class="main-content-header">
+              Welcome to the Space Place
+            </h3>
+            <p id="main-content-text" class="main-content-text">
+              I created this app to learn more about web development and to
+              explore the possibilities of web apps. I coupled this goal with my
+              love for space and astronomy to bring to life a fun and
+              educational app. <br />
+              <br />
+              As an avid space enthusiast, I'm always looking for new ways to
+              engage with the community and share my passion for the cosmos.
+              After finding dozens of astronomy apps that were either too
+              complicated or not free, I decided to create my own, merging my
+              favorite features into one place. <br />
+              <br />
+              I hope you enjoy using "The Space Place" as much as I enjoyed
+              creating it!
+            </p>
+            <button id="main-content-close" class="main-content-close">
+              Close
+            </button>
+          </span>
+        </main>
+        <nav aria-label="Main navigation">
+          <h3>Naviagation</h3>
+          <ul class="nav-list">
+            <li>
+              <a href="#" class="nav-button" id="btn1">
+                <span class="button-text">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-button" id="btn2">
+                <span class="button-text">3-D Solar System</span>
+              </a>
+            </li>
+            <li>
+              <button
+                class="nav-button dropdown-toggle"
+                id="btn3"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="button-text">Int'l Space Station</span>
+              </button>
+              <ul class="dropdown-menu" aria-label="submenu">
+                <li>
+                  <a id="itemA" href="#" class="dropdown-item">Track the ISS</a>
+                </li>
+                <li>
+                  <a id="itemB" href="#" class="dropdown-item">Live Video</a>
+                </li>
+                <li>
+                  <a id="itemC" href="#" class="dropdown-item">Disabled</a>
+                </li>
+              </ul>
+            </li>
+            <!-- More nav items... -->
+          </ul>
+        </nav>
+      </section>
+      <footer>
+        <p>&copy; 2024 The Space Place. All rights reserved.</p>
+      </footer>
       <div id="custom-prompt" class="custom-prompt">
         <div class="prompt-content">
           <p id="prompt-message"></p>
