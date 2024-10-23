@@ -149,7 +149,6 @@ main {
   position: relative;
   border-radius: 20px;
   margin-left: 2%;
-  box-shadow: 1px 1px 8px #ffdab3;
   overflow: hidden;
 }
 
@@ -327,7 +326,7 @@ button.dropdown-toggle {
 
 .dropdown-item {
   display: block;
-  width: auto%;
+  width: auto;
   padding: 10px;
   color: #ffdab3;
   text-decoration: none;
@@ -419,7 +418,7 @@ footer {
   margin: 10px 0;
   padding: 5px;
   background-color: #eeddcb;
-  color: white;
+  color: black;
 }
 
 #prompt-submit {
@@ -440,4 +439,16 @@ footer {
   100% {
     background-position: 200% 25%;
   }
+}
+
+iframe {
+  background: black;
+  border-radius: 20px;
+  z-index: 200;
+}
+
+.youtubeVideo {
+  background: black;
+  border-radius: 20px;
+  z-index: 200;
 }
